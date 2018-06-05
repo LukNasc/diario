@@ -1,0 +1,204 @@
+@font-face {
+	font-family: caligrafia1;
+	src: url('../../font/Zenith.otf');
+}
+@font-face{
+	font-family: caligrafia2;
+	src: url('../../font/PORCELAI.TTF');
+}
+*{padding:0px;margin: 0px;font-family:'Courier New', Courier, monospace;}
+p b{
+	line-height: 1.5 !important;
+}
+.edit{
+	background: #fff;
+	box-shadow: 10px 10px 10px #000;
+}
+body{
+	background-image: url("	https://reutilizandomadeira.files.wordpress.com/2015/05/texture-wallpaper-background-wood-board.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% 100% !important;
+
+}
+.back{
+	background-image: url("https://78.media.tumblr.com/506f1576596d60bfe66ad0f4bf682b56/tumblr_o6p7eyWMaE1rzo8x9o1_500.gif");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% 100% !important;
+}
+.h1{
+	color: #a00;
+	font-family: 'Courier New', Courier, monospace;
+	text-shadow: #fff 2px 2px;
+	text-align: center;
+	font-size: 100px;
+}
+.fonte{
+	font-family: caligrafia1 !important;
+	color: #000 !important;
+}
+.h5{
+	font-size: 15px;
+}
+/* .papel{
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMAZ3_EInKYkHYH9iYG3J8G9f4XWskyp3xMdi7nHdnVobvqZbX");
+	background-repeat: no-repeat;
+	background-size: 100% 1000px; 
+} */
+.btn-edit{
+	background-color:rgb(91, 0, 119);
+	color:white;
+	padding: 10px;
+}
+.caixa{
+	margin: 100px auto;
+	width: 400px;
+	background: #fff;
+	background-size:100% 100%;
+	background-repeat: no-repeat; 
+	padding: 10px;
+	border: 2px #000 solid;
+	border-radius: 10px;
+	text-align: center;
+	
+}
+.input{
+	padding :10px;
+	width: 100%;
+	background: transparent;
+	border: none;
+	border:solid #000 1px;
+}
+.input:hover{
+	cursor: url("../../cursor/Pen.cur"), pointer;
+}
+.adesivo{
+	width: 50px;
+	height: 60px;
+	margin:0px auto;
+	background:url("https://st2.depositphotos.com/4069797/9704/i/950/depositphotos_97043472-stock-photo-red-crumpled-paper-for-backgrounds.jpg");
+	margin-top: -50px;
+	margin-bottom: -10px;
+}
+#caixa{
+	background: #b9b7b7;
+	padding: 10px;
+	text-align: justify;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 15px;
+	margin-top: 5px;
+	position: static;
+}
+.foto{
+	border: 1px solid #000;
+	padding:5px;
+	padding-bottom:70px;
+	padding-top: 20px;
+	background: #fff;
+}
+.vertical{
+	border-right: #a00 2px solid;
+}
+.img{
+	width: 100%;
+	height: 330px;
+}
+.img-time-line{
+	width: 100%;
+	height: 300px;
+}
+.timeline{
+	text-align: justify;
+	background:url("http://backgroundcheckall.com/wp-content/uploads/2017/12/background-papel-amassado-6.jpg");
+	padding:10px;
+	padding-top:30px;
+}
+.timeline h3{
+	font-size: 30px;
+	margin-bottom:15px !important; 
+}
+.aparece{
+	display: none;
+	float: right;
+	margin-left: 5px;
+}
+.aparece:hover{
+	cursor: pointer;
+}
+.timeline:hover .aparece{
+	display: block;
+}
+.h3{
+	font-size: 60px;
+}
+.h5{
+	font-size: 50px;
+}
+.fa{
+	float: right;
+	font-size:20px ;
+	padding: 0px;
+	margin-bottom: -10px;
+}
+.modal-body{
+	background: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/background-papel-amassado-6.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+.txt-escreve{
+	resize: none;
+	height: 300px;
+	width: 100%;
+	font-size: 30px;
+	border: none;
+	padding: 7px;
+	background: transparent;
+}
+.file{
+	display: none;
+}
+.target-file{
+	border: solid 1px #000;
+	padding:10px;
+	width: 100%;
+	background: #a00;
+}
+.target-file:hover{
+	cursor: pointer; 
+}
+.red{
+	background: red;
+	color: red;
+	position: absolute;
+	z-index: 9999;
+}
+.footer{
+	height: 30px;
+}
+.footer ol li{
+	display: inline;
+	padding: 10px;
+	border:none;
+}
+hr{
+	color: aqua;
+	background: aqua;
+	margin-top: -20px;
+}
+ol{
+	list-style-type: none;	
+}
+ol li{
+	padding: 10px;
+	width: 100%;
+	font-size: 20px;
+	border-bottom: 1px aqua solid;
+}
+ol li:hover{
+	border-bottom-color:black;
+	cursor: pointer;
+}
+ol li:hover .fa{
+	color:red;
+}
