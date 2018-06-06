@@ -95,7 +95,10 @@
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <img src="https://lh3.googleusercontent.com/ZXnbVHpjBKFKqbMXr5slDkTW9PPNohZJ0NN0w1MWxohhlA5mEfd04YouxWoeqmreF0_J9OgR_qTcT8qwGEYaopmbSxyfxj-HxHz_hNTgLyLTEaZOoM-4u-WlyMlL_RQWACYgpqOoGPLPxemw3SsSw8fQUWsIle_rzV3tIzZcJVmZ4-25v0iIcNDSiF1H2ZgWvYp8NzJEVNn1afY5P_2XJUZYTGlD063bUv4iPoxxbYjfKpWDfzA7zDIR6JIWb7C1UFfMAdgDskjaOZYdCGk6HS0FSa5AjWCmhxOcMbdfpTRi_jAG_aD9StEQJaLV8GEO9ZNrERESBC_xyJU1XM5yxO872FpE1lYZ_IxNgsh6_x90uJodM2tj_aYoznB4LqOCFFT_jaNszRN9le6YHlnhlERVjK9JOhlgevfk9tA_dUA8rfgVsOrTiUZAAdVLMh58q54S8oBEQsFnZ-pBh9--h3IM3qdEOmcAYOIIIOmc5wTn3mDEUuNoa381MqiLXvliys3ZhZwVG2VwIqXIZF3VoT-TyqyR1lDZpsrvofKrcON5sIO2FsCBp7s5asgJc288lwSrQ8jgOkmEyKqEd_fZX8XT7z6xxBGxVRXj1fc=w394-h641-no" alt="Lucas2017" class="img">
+                       <div class="foto">
+                            <img src="https://dlory.ch/clip.png" class="icon">
+                            <img src="https://lh3.googleusercontent.com/ZXnbVHpjBKFKqbMXr5slDkTW9PPNohZJ0NN0w1MWxohhlA5mEfd04YouxWoeqmreF0_J9OgR_qTcT8qwGEYaopmbSxyfxj-HxHz_hNTgLyLTEaZOoM-4u-WlyMlL_RQWACYgpqOoGPLPxemw3SsSw8fQUWsIle_rzV3tIzZcJVmZ4-25v0iIcNDSiF1H2ZgWvYp8NzJEVNn1afY5P_2XJUZYTGlD063bUv4iPoxxbYjfKpWDfzA7zDIR6JIWb7C1UFfMAdgDskjaOZYdCGk6HS0FSa5AjWCmhxOcMbdfpTRi_jAG_aD9StEQJaLV8GEO9ZNrERESBC_xyJU1XM5yxO872FpE1lYZ_IxNgsh6_x90uJodM2tj_aYoznB4LqOCFFT_jaNszRN9le6YHlnhlERVjK9JOhlgevfk9tA_dUA8rfgVsOrTiUZAAdVLMh58q54S8oBEQsFnZ-pBh9--h3IM3qdEOmcAYOIIIOmc5wTn3mDEUuNoa381MqiLXvliys3ZhZwVG2VwIqXIZF3VoT-TyqyR1lDZpsrvofKrcON5sIO2FsCBp7s5asgJc288lwSrQ8jgOkmEyKqEd_fZX8XT7z6xxBGxVRXj1fc=w394-h641-no" alt="Lucas2017" class="img">
+                       </div>
                     </div>
                 </div>
                 <br>
@@ -111,7 +114,8 @@
                             if(isset($linha->img)){
                                 echo "
                                 <div class=\"timeline\">
-                                  <div class=\"adesivo\"></div>
+                              
+                                <img src=\"http://4.bp.blogspot.com/-0yPkG3xT4Ec/TuTzpr5v4mI/AAAAAAAADk0/fMSicn9FRME/s1600/tape+1.png\" class=\"adesivo\">
                                     <div class=\"row\">
                                         <div class=\"col-md-3\">
                                             <br>
@@ -123,6 +127,7 @@
                                         </div>
                                         <div class=\"col-md-5\">
                                             <div class=\"foto\">
+                                          <img src=\"https://dlory.ch/clip.png\" class=\"icon\">
                                                 <img src=\"img/imagem.php?id={$linha->id}\" class=\"img-time-line\">
                                             </div>
                                         </div>

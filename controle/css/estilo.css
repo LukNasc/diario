@@ -74,12 +74,12 @@ body{
 	cursor: url("../../cursor/Pen.cur"), pointer;
 }
 .adesivo{
-	width: 50px;
-	height: 60px;
+	width: 250px;
+	height: 250px;
 	margin:0px auto;
-	background:url("https://st2.depositphotos.com/4069797/9704/i/950/depositphotos_97043472-stock-photo-red-crumpled-paper-for-backgrounds.jpg");
-	margin-top: -50px;
-	margin-bottom: -10px;
+	margin-top: -130px;
+	margin-bottom: -200px;
+	margin-left:260px;
 }
 #caixa{
 	background: #b9b7b7;
@@ -96,6 +96,7 @@ body{
 	padding-bottom:70px;
 	padding-top: 20px;
 	background: #fff;
+	box-shadow:10px 10px 10px  #000;
 }
 .vertical{
 	border-right: #a00 2px solid;
@@ -110,9 +111,11 @@ body{
 }
 .timeline{
 	text-align: justify;
-	background:url("http://backgroundcheckall.com/wp-content/uploads/2017/12/background-papel-amassado-6.jpg");
-	padding:10px;
+	padding:20px;
 	padding-top:30px;
+	background: url('https://png.pngtree.com/element_origin_min_pic/17/07/01/002cb5ac924d5f0b099dc1a3a730eef4.jpg');
+	background-size:100% 100%;
+	background-repeat: no-repeat;
 }
 .timeline h3{
 	font-size: 30px;
@@ -171,7 +174,8 @@ body{
 	background: red;
 	color: red;
 	position: absolute;
-	z-index: 9999;
+	z-index: 9999
+
 }
 .footer{
 	height: 30px;
@@ -180,6 +184,13 @@ body{
 	display: inline;
 	padding: 10px;
 	border:none;
+}
+.icon{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 145px;
+	top:-10px;
 }
 hr{
 	color: aqua;
