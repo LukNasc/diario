@@ -73,6 +73,9 @@ body{
 .input:hover{
 	cursor: url("../../cursor/Pen.cur"), pointer;
 }
+.es{
+	float:left !important;
+}
 .adesivo{
 	width: 250px;
 	height: 250px;
@@ -191,6 +194,21 @@ body{
 	position: absolute;
 	left: 145px;
 	top:-10px;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	text-decoration: none;
+	color: #000;
+}
+a:active{
+	text-decoration: none;
+	color: #000;
+}
+.selecionado{
+	color: #a00;
 }
 hr{
 	color: aqua;

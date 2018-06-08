@@ -8,3 +8,9 @@ CREATE TABLE IF NOT EXISTS diario.timeline(
     titulo VARCHAR(1000) NOT NULL,
     position CHAR(1) DEFAULT "E"
 );
+CREATE TABLE IF NOT EXISTS diario.album(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(100) NOT NULL,
+    data DATE,
+    imgem LONGBLOB
+);

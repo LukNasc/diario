@@ -2,7 +2,7 @@
 <?php
     session_start();
 ?>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta lang="pt-br">
@@ -30,6 +30,7 @@
                     <li data-toggle="modal" data-target="#exampleModal">Escrever <i class="fa fa-pencil"></i></li>
                     <li>Vida Pessoal<i class="fa fa-info"></i></li>
                     <li>Meu futuro <i class="fa fa-cloud"></i></li>
+                    <a href="album.php"><li>Album de fotos <i class="fa fa-photo"></i></li></a>
                     <li>Comentar sobre <i class="fa fa-comments"></i></li>
                 </ol>
             </div>
@@ -61,7 +62,7 @@
                                     <input type="text" name="titulo" class="input" placeholder="Titulo" required>
                                 </div>
                                 <div class="col-md-12">
-                                    <textarea name="texto" class="txt-escreve">Escreva sobre o seu dia aqui..</textarea>
+                                    <textarea name="texto" class="txt-escreve" lang="pt-br">Escreva sobre o seu dia aqui..</textarea>
                                 </div>
                             </div>
                            
@@ -112,44 +113,84 @@
                         $comand=$con->getCon()->query($select,PDO::FETCH_OBJ);
                         foreach($comand as $linha){
                             if(isset($linha->img)){
-                                echo "
-                                <div class=\"timeline\">
-                              
-                                <img src=\"http://4.bp.blogspot.com/-0yPkG3xT4Ec/TuTzpr5v4mI/AAAAAAAADk0/fMSicn9FRME/s1600/tape+1.png\" class=\"adesivo\">
-                                    <div class=\"row\">
-                                        <div class=\"col-md-3\">
-                                            <br>
-                                            <h5><b>{$linha->data}</b></h5>
-                                        </div>
-                                        <div class=\"col-md-9\">
-                                            <br>
-                                            <h3><b>{$linha->titulo}</b></h3>
-                                        </div>
-                                        <div class=\"col-md-5\">
-                                            <div class=\"foto\">
-                                          <img src=\"https://dlory.ch/clip.png\" class=\"icon\">
-                                                <img src=\"img/imagem.php?id={$linha->id}\" class=\"img-time-line\">
-                                            </div>
-                                        </div>
-                                        <div class=\"col-md-7\">
-                                            <p>
-                                                <b>
-                                                    {$linha->texto}
-                                                </b>
-                                            </p>
-                                        </div>
-                                        <div class=\"col-md-12 footer\">
-                                            <ol>
-                                                <li><i class=\"fa fa-pencil aparece\"></i></li>
-                                                <li data-toggle=\"modal\" data-target=\"#ModalFoto{$linha->id}\"><i class=\"fa fa-photo aparece\" ></i></li>
-                                            </ol>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <br>
-                                ";
-                               
+                                if($linha->position=="E"){
+                                            echo "
+                                                <div class=\"timeline\">
+
+                                                <img src=\"http://4.bp.blogspot.com/-0yPkG3xT4Ec/TuTzpr5v4mI/AAAAAAAADk0/fMSicn9FRME/s1600/tape+1.png\" class=\"adesivo\">
+                                                <div class=\"row\">
+                                                <div class=\"col-md-3\">
+                                                <br>
+                                                <h5><b>{$linha->data}</b></h5>
+                                                </div>
+                                                <div class=\"col-md-9\">
+                                                <br>
+                                                <h3><b>{$linha->titulo}</b></h3>
+                                                </div>
+                                                <div class=\"col-md-5\">
+                                                <div class=\"foto\">
+                                                <img src=\"https://dlory.ch/clip.png\" class=\"icon\">
+                                                    <img src=\"img/imagem.php?id={$linha->id}\" class=\"img-time-line\">
+                                                </div>
+                                                </div>
+                                                <div class=\"col-md-7\">
+                                                <p>
+                                                    <b>
+                                                        {$linha->texto}
+                                                    </b>
+                                                </p>
+                                                </div>
+                                                <div class=\"col-md-12 footer\">
+                                                <ol>
+                                                    <li><i class=\"fa fa-pencil aparece\"></i></li>
+                                                    <li data-toggle=\"modal\" data-target=\"#ModalFoto{$linha->id}\"><i class=\"fa fa-photo aparece\" ></i></li>
+                                                </ol>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <br>
+                                                <br>
+                                                ";
+                                            }else {
+                                                echo "
+                                                <div class=\"timeline\">
+
+                                                <img src=\"http://4.bp.blogspot.com/-0yPkG3xT4Ec/TuTzpr5v4mI/AAAAAAAADk0/fMSicn9FRME/s1600/tape+1.png\" class=\"adesivo\">
+                                                <div class=\"row\">
+                                                <div class=\"col-md-3\">
+                                                <br>
+                                                <h5><b>{$linha->data}</b></h5>
+                                                </div>
+                                                <div class=\"col-md-9\">
+                                                <br>
+                                                <h3><b>{$linha->titulo}</b></h3>
+                                                </div>
+
+                                                <div class=\"col-md-7\">
+                                                <p>
+                                                    <b>
+                                                        {$linha->texto}
+                                                    </b>
+                                                </p>
+                                                </div>
+                                                <div class=\"col-md-5\">
+                                                <div class=\"foto\">
+                                                <img src=\"https://dlory.ch/clip.png\" class=\"icon\">
+                                                    <img src=\"img/imagem.php?id={$linha->id}\" class=\"img-time-line\">
+                                                </div>
+                                                </div>
+                                                <div class=\"col-md-12 footer\">
+                                                <ol>
+                                                    <li><i class=\"fa fa-pencil aparece es\"></i></li>
+                                                    <li data-toggle=\"modal\" data-target=\"#ModalFoto{$linha->id}\" ><i class=\"fa fa-photo aparece es\" ></i></li>
+                                                </ol>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <br>
+                                                <br>
+                                                ";
+                                            }	
                                }else{
                                 echo "
                                 <div class=\"timeline\">
