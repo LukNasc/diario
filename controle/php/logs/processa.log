@@ -1,0 +1,3 @@
+No dia 20-06-2018 às 01:08:31 ocorreu a seguinte exceção: 
+ SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'texto' cannot be null 
+

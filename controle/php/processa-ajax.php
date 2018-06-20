@@ -1,6 +1,9 @@
 <?php
 session_start();
   try{
+    $data = $_POST['data'];
+    $date=date('d-m-Y', strtotime($data));          
+    $date = date("Y-m-d",strtotime(str_replace('/','-',$data)));  
         require_once("conexao.php");
         $con=new Conectar();
         $verificar="SELECT * FROM timeline;";
@@ -8,7 +11,7 @@ session_start();
         //   insert
         $sql=$con->getCon()->prepare("INSERT INTO timeline(texto,data,titulo,position) VALUES(?,?,?,?);");
         $sql->bindParam(1, $_POST['texto']);
-        $sql->bindParam(2, $_POST['data']);
+        $sql->bindParam(2, $date);
         $sql->bindParam(3, $_POST['titulo']);
         $count=$ver->rowCount();
         if($count>0){

@@ -4,13 +4,13 @@ CREATE TABLE IF NOT EXISTS diario.timeline(
     id INT PRIMARY KEY AUTO_INCREMENT,
     texto VARCHAR(1000) NOT NULL,
     img LONGBLOB,
-    data VARCHAR(10) NOT NULL,
+    data DATE NOT NULL,
     titulo VARCHAR(1000) NOT NULL,
     position CHAR(1) DEFAULT "E"
 );
 CREATE TABLE IF NOT EXISTS diario.album(
     id INT PRIMARY KEY AUTO_INCREMENT,
-    titulo VARCHAR(100) NOT NULL,
+    titulo VARCHAR(10) NOT NULL,
     data DATE,
-    imgem LONGBLOB
+    imagem LONGBLOB
 );
