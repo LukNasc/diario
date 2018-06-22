@@ -40,7 +40,7 @@
                         <div class="col-md-12 col-12 col-lg-12 footer" style="background-color:rgb(23, 245, 134);padding:5px;border:solid 1px rgb(18, 177, 97);">
                             <ol>
                                 <a href="https://www.instagram.com/blessed7170/"><li><i class="fa fa-instagram"></i></li></a>
-                                <a href="https://lucas.ntectreinamentos.com.br/portfolio"><li><i class="fa fa-book"></i></li></a>
+                                <a href="http://lucas.ntectreinamentos.com.br/portifolio/"><li><i class="fa fa-book"></i></li></a>
                                 <a href="https://www.github.com/LukNasc"><li><i class="fa fa-github"></i></li></a>
                             </ol>
                         </div>
