@@ -1,4 +1,26 @@
 # diario
 Trabalho do Clemilton, Aplicação WEB
-<h2>Como instalar o BD</h2>
-<h5>Para colocar o BD, primeiro execute o arquivo "banco.sql" e depois execute o arquivo "tabela.sql"</h5>
+<h3>O que é o projeto</h3>
+<p>
+    O Projeto é uma aplicação web, feita para um trabaçho escolar, no final do 2º bimstre de 2018.
+    da turma do 3º ano de informática, aluno João Lucas do Nascimento desenvolveu essa aplicação como um diário virtual
+</p>
+<h3>Como começar?</h3>
+    <ol>
+        <li>Instale o BD -> sql/banco.sql</li>
+        <li>Coloque todos os arquivos da aplicação dentro de uma pasta de um servidor web</li>
+    </ol>
+<h3>Alguns bugs</h3>
+    <p>
+        Quando for fazer alguma modificação na timeline ja adicionada, recarregue a página, caso contrário os links de envio não estarão funcionando.
+        Ex: Adicionar Imagem ou Editar texto
+    </p>
+<h3>Desenvolvedor</h3>
+    <p>Desenvolvedor web de apenas 17 anos de idade</p>
+    <ul>
+        <a href="https://twitter.com/lucasjoao851"><li>Twitter</li></a>
+        <a href="http://lucas.ntectreinamentos.com.br/portifolio"><li>Portfólio</li></a>
+        <a href="https://www.instagram.com/blessed7170/"><li>Instagram</li></a>
+    </ul> 
+    <h2>Autor</h2>
+    <b>Lucas Nascimento</b>
