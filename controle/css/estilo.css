@@ -53,7 +53,7 @@
 }
 .fixed{
 	position: fixed;
-	width: 455px;
+	width:34%;
 	height: 100%;
 	top: 100px;
 
@@ -112,10 +112,9 @@
 	background: transparent !important;
 }
 .aparece{
-	opacity: 0;
-	float: right;
-	margin-left: 5px;
-	background: transparent !important;
+	display: block ;
+	float: right ;
+	margin-left: 5px ;
 }
 .aparece:hover{
 	cursor: pointer;
@@ -123,15 +122,16 @@
 	background:transparent !important;
 }
 .timeline:hover .aparece{
-	opacity: 1;
-	background: transparent !important;
+	display: block;
 }
 .input{
 	padding :10px;
-	width: 100%;
+	width: 50%;
 	background: transparent;
 	border: none;
 	border:solid #000 1px;
+	text-align: center;
+	align-items: center;
 }
 .es{
 	float:left !important;
@@ -215,12 +215,6 @@
 }
 .formulario{
 	margin: 0px auto;
-}
-.formulario form input[type="submit"]{
-	margin-left:55px;
-}
-.formulario form label{
-	margin-left:45px; 
 }
 .fileName{
 	margin-bottom: -100px;
@@ -328,6 +322,59 @@
 	margin-right:30px !important;
 	color: #fff;
 }
+.comentario{
+	resize: none;
+	height: 90px;
+	width: 100%;
+	padding: 5px;
+	border-radius: 20px;
+	border:solid rgb(18, 177, 97) 2px;
+}
+.perfil{
+	border-radius:100%;
+	width: 100px;
+	height: 100px;
+	margin:0px auto;
+	border: solid 2px rgb(18, 177, 97);
+}
+.perfil:hover{
+	cursor: pointer;
+}
+#aviso{
+	background: rgb(23, 245, 134);
+	border:solid 1px rgb(18, 177, 97);
+	color:#fff;
+	position: absolute;
+	top:150px;
+	z-index: 1;
+	display: none; 
+}
+.enviar{
+	margin-top:15px;
+	border:solid rgb(18, 177, 97) 2px;
+	background: rgb(132, 160, 243);	
+	padding: 5px;
+	border-radius:10px;
+	cursor: pointer;
+}
+.box{
+	margin-top: 20px;
+	padding: 10px;
+}
+.comentario-box{
+	background: rgb(125, 255, 190);
+	padding:5px;
+	border-radius:10px;
+	border:solid 2px rgb(18, 177, 97);
+}
+.box-img{
+	padding-top: 20px;
+}
+.coment{
+	border:solid 2px #000;
+	background: #ccc;
+	padding: 10px;
+}
 /* TAGS */
 hr{
 	color: rgb(18, 177, 97);
@@ -365,4 +412,29 @@ a:active{
 	text-decoration: none;
 	color: #000;
 }
-
+/* mediaquery */
+@media only screen and (max-width:772px){
+	.fixed{
+		position: static;
+		width: 100%;
+		margin-top: 100px;
+		text-align: center;
+	}
+	.some{
+		margin-bottom:5px;
+	}
+	.upload{
+		height: 800px;
+	}
+}
+@media only screen and (max-width:846px){
+	#relogio{
+		font-size: 30px;
+		height: 50px;
+	}
+}
+@media only screen and (width:978px){
+	.ol{
+		display: block;
+	}
+}

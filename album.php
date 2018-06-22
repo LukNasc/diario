@@ -110,8 +110,9 @@
                     <div class="col-md-12">
                         <div class="upload">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 col-12 col-lg-4">
                                         <div class="formulario">
+                                            <center>
                                             <form action="controle/php/fotoAlb.php" method="post" enctype="multipart/form-data">
                                                 <label for="foto" class="target-file" id="fileName"></label>
                                                 <input type="file" name="foto" id="foto" class="file">
@@ -122,12 +123,13 @@
                                                     
                                                 <input type="submit" value="Enviar Foto" class="btn btn-edit">
                                             </form>
+                                            </center>
                                             <!-- form -->
                                         </div>
                                         <!-- formulario -->
                                     </div>
                                     <!-- col-md-4 -->
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 col-12 col-lg-8">
                                     <center><h2>Imagem Selecionada</h2>
                                         <img src="http://www.bichobrasil.com.br/wp-content/themes/BichoBrasil_v1/images/2612f766d8738038e82d4df7addf7144_bordaimgproduto02.png" id="img" width="300px" height="300px"></center>
                                     </div>

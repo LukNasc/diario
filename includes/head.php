@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="controle/css/estilo.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="controle/js/jquery.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="cleavejs/dist/cleave.min.js"></script>
     <script src="controle/js/app.js"></script>

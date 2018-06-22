@@ -15,12 +15,7 @@ function mostrarResposta(elemento,ajax){
 		if(ajax.status == 200 || ajax.status == 304){ // Condição baseada no estado da RESPOSTA
 			elemento.innerHTML = ajax.responseText; 
 		}else{
-            swal({
-                title:"Erro 303",
-                text:"Ocorreu um erro ao tentar encontrar o arquivo desejado",
-                icon:"error",
-                button: "TUDO BEM",
-            });
+            alert('ERROR 303, Página não encintrada');
 		}
 	}
 }

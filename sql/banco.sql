@@ -6,11 +6,21 @@ CREATE TABLE IF NOT EXISTS diario.timeline(
     img LONGBLOB,
     data DATE NOT NULL,
     titulo VARCHAR(1000) NOT NULL,
-    position CHAR(1) DEFAULT "E"
+    privado CHAR(1) DEFAULT "N"
 );
 CREATE TABLE IF NOT EXISTS diario.album(
     id INT PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR(10) NOT NULL,
     data DATE,
     imagem LONGBLOB
+);
+CREATE TABLE IF NOT EXISTS diario.senha(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    senha VARCHAR(50) NOT NULL
+);
+CREATE TABLE IF NOT EXISTS diario.comentarios(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) DEFAULT 'Desconhecido',
+    img LONGBLOB DEFAULT NULL,
+    comentario VARCHAR(300) NOT NULL
 );

@@ -9,28 +9,11 @@ session_start();
         $verificar="SELECT * FROM timeline;";
         $ver=$con->getCon()->query($verificar);    
         //   insert
-        $sql=$con->getCon()->prepare("INSERT INTO timeline(texto,data,titulo,position) VALUES(?,?,?,?);");
+        $sql=$con->getCon()->prepare("INSERT INTO timeline(texto,data,titulo,privado) VALUES(?,?,?,?);");
         $sql->bindParam(1, $_POST['texto']);
         $sql->bindParam(2, $date);
         $sql->bindParam(3, $_POST['titulo']);
-        $count=$ver->rowCount();
-        if($count>0){
-            echo "to aqui";
-            $select="SELECT position FROM timeline ORDER BY id DESC LIMIT 1";
-            $cmd=$con->getCon()->query($select);
-            $ultimo_valor=$cmd->fetchColumn();
-            //    insert
-            if($ultimo_valor=="E"){
-                $d="D";
-                $sql->bindParam(4, $d);
-            }else{
-                $e="E";
-                $sql->bindParam(4, $e);
-            }
-        }else{
-          $e="E";
-          $sql->bindParam(4, $e);
-        }
+        $sql->bindParam(4, $_POST['privado']);
         $sql->execute();
         header("location: ../../");
   }catch(SQLException $e){
